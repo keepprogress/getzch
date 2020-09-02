@@ -1,24 +1,149 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+box-sizing:content-box;
+//div 設定的寬度僅為內容寬度，而內距與邊框額外加上去
+box-sizing:boder-box
+//div 設定的寬度就已經包含內容寬度、內距與邊框寬度
+// *表示全部套用
+* {
+  -webkit-box-sizing: border-box; 
+     -moz-box-sizing: border-box;  
+          box-sizing: border-box; 
+}
+
+
 .wrap {
     max-width: 1000px;
     margin:0 auto;
 }
 
+.header {
+    background-color: #F0F0F0;
+    max-width: 1000px;
+    height: 30px;
+}
+
+.header ul li {
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 1%px;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.twitter {
+    color:#00ACF0;
+    line-height: 30px;
+    float: right;
+    padding-left: 16px;
+    background: url(/Users/VDHuiJihhsu/Documents/images/01/twitter.png) no-repeat;
+    background-position: 0% 50%;
+}
+
+.fb {
+    color: #3061A4;
+    line-height: 30px;
+    float: right;
+    padding-left: 16px;
+    background: url(/Users/VDHuiJihhsu/Documents/images/01/fb.png) no-repeat;
+    background-position: 0% 50%;
+ }
+
+
+.menu {
+    border-bottom:2px #cccccc solid;
+    max-width: 1000px;
+    height: 36px;
+    margin-bottom: 3px;
+}
+
+.logo {
+    float: left;
+    height: 36px;
+    width: 58%;
+    background: url(/Users/VDHuiJihhsu/Documents/images/01/logo.png) no-repeat;
+}
+
+.menu ul li {
+    color:#00CE97;
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    height: 36px;
+    width: 10%;
+}
+
+}
+
 .content {
     width: 100%;
+    
 }
 
 .content ul li{
-    width: 30%;
+    text-align: center;
+    width: 29%;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    display: inline-block;
+    float: left;
+    margin-top: 150px;
+    border: 1px #FBFCFB solid;
 }
 
+.content ul li p {
+    padding-left: 20px;
+    text-align: left;
+}
 
-
-.html,.jq,.rwd {
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    display: inline-block;
+.content ul li ul li{
+    width: 100%;
+    text-align: left;
+    margin-top: 0px;
+    float: none;
+    border: none;
 }
