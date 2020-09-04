@@ -56,19 +56,20 @@ box-sizing:boder-box
 .wrap {
     max-width: 1000px;
     margin:0 auto;
+    
 }
 
 .header {
-    background-color: #F0F0F0;
+    background-color: #f6f6f6;
     max-width: 1000px;
     height: 30px;
 }
 
 .header ul li {
-    line-height: 30px;
+    line-height: 36px;
     font-weight: bold;
-    margin-right: 1%px;
-    margin-left: 1%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
     display: inline-block;
     vertical-align: middle;
     
@@ -83,6 +84,11 @@ box-sizing:boder-box
     background-position: 0% 50%;
 }
 
+.twitter a{
+    color:#00ACF0;
+    text-decoration:none;
+}
+
 .fb {
     color: #3061A4;
     line-height: 30px;
@@ -92,12 +98,17 @@ box-sizing:boder-box
     background-position: 0% 50%;
  }
 
+ .fb a{
+    color: #3061A4;
+    text-decoration:none;
+ }
 
 .menu {
-    border-bottom:2px #cccccc solid;
+    box-shadow:0px 2px 4px   rgba(200, 199, 199, .8);
     max-width: 1000px;
     height: 36px;
-    margin-bottom: 3px;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
 
 .logo {
@@ -105,17 +116,38 @@ box-sizing:boder-box
     height: 36px;
     width: 58%;
     background: url(/Users/VDHuiJihhsu/Documents/images/01/logo.png) no-repeat;
+    background-position:0% 50%;
+   
 }
 
 .menu ul li {
     color:#00CE97;
-    padding-top: 10px;
+    line-height: 36px;
     text-align: center;
     display: inline-block;
     font-weight: bold;
     font-size: 18px;
     height: 36px;
     width: 10%;
+}
+
+.menu ul li a{
+    color:#00CE97;
+    text-decoration:none;
+}
+
+@media (max-width: 767px) {
+    .logo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu ul li {
+        float: left;
+        width: 50%;
+        padding-top: 0px;
+        line-height: 36px;
+    }
 }
 
 }
@@ -127,17 +159,32 @@ box-sizing:boder-box
 
 .content ul li{
     text-align: center;
-    width: 29%;
+    width: 30%;
     margin-left: 1.5%;
     margin-right: 1.5%;
     float: left;
     margin-top: 150px;
-    border: 1px #FBFCFB solid;
+    box-shadow:1px 2px 5px 1px rgba(200, 199, 199, .8);
+
 }
 
+@media (max-width: 767px) {
+    .content ul li {
+        width: 97%;
+        margin-top: 85px;
+    }
+  }
 .content ul li p {
+    margin-bottom: 10px;
     padding-left: 20px;
     text-align: left;
+    line-height: 20px
+}
+
+.content ul li h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .content ul li ul li{
@@ -146,4 +193,9 @@ box-sizing:boder-box
     margin-top: 0px;
     float: none;
     border: none;
+    box-shadow: none;
+    line-height: 25px
 }
+
+
+
